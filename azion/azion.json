@@ -1,0 +1,58 @@
+{
+  "name": "blog-performance",
+  "bucket": "blog-performance-20250119165003",
+  "preset": "angular",
+  "env": "production",
+  "prefix": "20250119164943",
+  "not-first-run": true,
+  "function": {
+    "id": 36359,
+    "name": "__DEFAULT__",
+    "file": ".edge/worker.js",
+    "args": "azion/args.json",
+    "instance-id": 35184,
+    "instance-name": "__DEFAULT__",
+    "cache-id": 0
+  },
+  "application": {
+    "id": 1737301052,
+    "name": "__DEFAULT__"
+  },
+  "domain": {
+    "id": 1737304039,
+    "name": "blog-performance",
+    "domain_name": "efxj71ykua.map.azionedge.net",
+    "url": "https://efxj71ykua.map.azionedge.net"
+  },
+  "rt-purge": {
+    "purge_on_publish": true
+  },
+  "origin": [
+    {
+      "origin-id": 182583,
+      "origin-key": "1cd7802c-d60f-4d62-84d4-b29749b98966",
+      "name": "origin-storage-default"
+    }
+  ],
+  "rules-engine": {
+    "created": false,
+    "rules": [
+      {
+        "id": 351119,
+        "name": "Set Storage Origin for All Requests",
+        "phase": "request"
+      },
+      {
+        "id": 351120,
+        "name": "Deliver Static Assets",
+        "phase": "request"
+      },
+      {
+        "id": 351121,
+        "name": "Redirect to index.html",
+        "phase": "request"
+      }
+    ]
+  },
+  "cache-settings": []
+}
